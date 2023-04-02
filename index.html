@@ -2,20 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
   
   <title>Frontend Mentor | Calculator app</title>
 
 </head>
 <body>
 
-
+  <div class="container">
+    <div class="calculator">
+      <div class="top-items">
+        <div class="calc-label">
+          <p>calc</p>
+        </div>
+        <!-- <div class="theme-setting">
+          <div class="theme-label">
+            <p>theme</p>
+          </div>
+          <div class="theme-level">
+            <div class="level">
+              <p>1  2 3</p>
+            </div>
+            <div class="toggle-btn">
+              <label class="toggle-background">
+                <input type="checkbox">
+                <span clas="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="display-screen">
+        <form>
+          <div class="display">
+            <input type="text" name="display" class="screen">
+          </div>
+          <div class="key-pads">
+            <div>
+              <input type="button" value="7" onclick="display.value += '7' ">
+              <input type="button" value="8" onclick="display.value += '8' ">
+              <input type="button" value="9" onclick="display.value += '9' ">
+              <input type="button" value="del" onclick="display.value = display.value.toString().slice(0, -1) " class="delete">
+            </div>
+            <div>
+              <input type="button" value="4" onclick="display.value += '4' ">
+              <input type="button" value="5" onclick="display.value += '5' ">
+              <input type="button" value="6" onclick="display.value += '6' ">
+              <input type="button" value="+" onclick="display.value += '+' ">
+            </div>
+            <div>
+              <input type="button" value="1" onclick="display.value += '1' ">
+              <input type="button" value="2" onclick="display.value += '2' ">
+              <input type="button" value="3" onclick="display.value += '3' ">
+              <input type="button" value="-" onclick="display.value += '-' ">
+            </div>
+            <div>
+              <input type="button" value="." onclick="display.value += '.' ">
+              <input type="button" value="0" onclick="display.value += '0' ">
+              <input type="button" value="/" onclick="display.value += '/' ">
+              <input type="button" value="x" onclick="display.value += '*' ">
+            </div>
+            <div>
+              <input type="button" value="reset" onclick="display.value = '' " class="reset">
+              <input type="button" value="=" onclick="display.value = eval(display.value) " class="equal">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/M2BARH" target="_blank">Thulani Mgaga</a>.
   </div>
+
+  <script src="/script/script.js"></script>
 </body>
 </html>
