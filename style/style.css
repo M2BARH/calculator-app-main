@@ -107,10 +107,3 @@ input:checked + .slider:before {
 	color: hsl(228, 45%, 44%);
 	font-weight: 600;
 }
-
-/* For responsiviness */
-@media screen and (max-width: 300px)  {
-	.container {
-		height: 5vh;
-	}
-}
